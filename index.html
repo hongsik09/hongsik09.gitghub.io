@@ -327,6 +327,88 @@
                     
                         <a
                             class="link-unstyled"
+                            href="/2020/04/04/Breaking-the-Barrier-Roubust-Speech-%EC%9A%94%EC%95%BD/"
+                            aria-label=": Breaking the Barrier : Roubust Speech translation 요약"
+                        >
+                            Breaking the Barrier : Roubust Speech translation 요약
+                        </a>
+                    
+                </h1>
+                <div class="postShorten-meta">
+    <time datetime="2020-04-04T21:17:49+09:00">
+	
+		    2020/04/04
+    	
+    </time>
+    
+</div>
+
+            </div>
+            
+                <div class="postShorten-content">
+                    <p>해당 포스팅은 제가 하고있는 일에 관련된 논문을 앞서 공유한 논문 읽는 법에 적용시켜 읽고 요약한 논문입니다.</p>
+<p>자세한 내용은 논문을 직접 읽어보시길 바랍니다. <a href="https://arxiv.org/abs/1909.11430" target="_blank" rel="noopener">논문 링크</a></p>
+<p>Abstract</p>
+<ul>
+<li>데이터의 부족함이 존재한다 (음성통역이란 분야에서)</li>
+<li>음성 인식 결과에 적응한 번역기를 만든다</li>
+</ul>
+<p>Figures</p>
+<ol>
+<li><p>구조 설명</p>
+<p>만들어진 스크립트와 ASR 결과를 정렬해서 쌍을 만들고 하나는 Discriminator에 다른 하나는 Decoder에 넣어준다.</p>
+<p>Discriminator는 encoder가 비슷하지만 noise 섞인 문장을 뱉게 훈련한다.</p>
+</li>
+</ol>
+<p>Intro + Conclusion</p>
+<ul>
+<li><p>아직은 E2E보다는 Pipline 구조가 성능이 더 좋다</p>
+</li>
+<li><p>현재 연구의 어려움은 Speech - Transcript - 번역결과 의 데이터를 구하기 어려움</p>
+</li>
+<li><p>인공적인 noise를 생성한 연구가 있었지만 성과가 미비했다</p>
+</li>
+<li><p>Main Idea는 NMT의 Encoder Decoder를 ASR의 noise가 내재된 상태로 학습되게 유도하는 방법</p>
+</li>
+<li><p>NMT 모델에 영향을 안받기 때문에 겹쳐서 사용가능(Discriminator)</p>
+</li>
+<li><p>결론적으로 위 논문은 음성 + 스크립트 데이터를  통역 시스템에 사용하기 위함</p>
+</li>
+<li><p>위 방법을 통해 음성 통번역 분야에서 성취를 발성함</p>
+</li>
+</ul>
+
+                    
+                        
+
+
+                    
+                    
+                        <p>
+                            <a
+                                href="/2020/04/04/Breaking-the-Barrier-Roubust-Speech-%EC%9A%94%EC%95%BD/#post-footer"
+                                class="postShorten-excerpt_link link"
+                                aria-label=""
+                            >
+                                댓글 공유
+                            </a>
+                        </p>
+                    
+                </div>
+            
+        </div>
+        
+    </article>
+    
+    
+    <article class="postShorten postShorten--thumbnailimg-bottom">
+        <div class="postShorten-wrap">
+            
+            <div class="postShorten-header">
+                <h1 class="postShorten-title">
+                    
+                        <a
+                            class="link-unstyled"
                             href="/2020/04/03/%EB%85%BC%EB%AC%B8-%EC%9D%BD%EB%8A%94-%EB%B2%95/"
                             aria-label=": 논문 읽는 법"
                         >
